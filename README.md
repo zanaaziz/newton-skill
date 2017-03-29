@@ -2,12 +2,12 @@
 An Alexa skill that connects to an API in order to solve various algebraic mathematical expressions when asked for by the user.
 
 # How Does It Work?
-1.) Ask Newton a mathematical expression you'd like the answer to.
-2.) Newton will listen and connect to an API which takes in the mathematical expression and responds with its result.
-3.) Alexa then calls out the result for you.
+- 1.) Ask Newton a mathematical expression you'd like the answer to.
+- 2.) Newton will listen and connect to an API which takes in the mathematical expression and responds with its result.
+- 3.) Alexa then calls out the result for you.
 
 # Newton 1.0
-The first working edition of Newton with the capability of solving basic differentiation and logarithmic problems. 
+The first working edition of Newton with the capability of solving basic differentiation and logarithmic problems.
 In this version, Newton has the capability of solving simple differential and logarithmic problems.
 
 Differentiation Example:
