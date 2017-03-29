@@ -11,9 +11,9 @@ The first working edition of Newton with the capability of solving basic differe
 In this version, Newton has the capability of solving simple differential and logarithmic problems.
 
 Differentiation Example:
-User: "What's the derivative of x to the power of seven?" [x^7]
-Newton: "The answer is six x to the power of six" [6x^6]
+- User: "What's the derivative of x to the power of seven?" [x^7]
+- Newton: "The answer is six x to the power of six" [6x^6]
 
 Logarithmic Example:
-User: "What's the log of eight to the base of two?" [log2(8)]
-Newton: "The answer is three." [3]
+- User: "What's the log of eight to the base of two?" [log2(8)]
+- Newton: "The answer is three." [3]
