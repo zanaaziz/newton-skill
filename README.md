@@ -12,7 +12,6 @@ Credits go to Gerald Nash (aunyks) for the API to make this possible on https://
 
 # Newton 1.0
 The first working edition of Newton with the capability of solving basic differentiation and logarithmic problems.
-In this version, Newton has the capability of solving simple differential and logarithmic problems.
 
 Differentiation Example:
 
