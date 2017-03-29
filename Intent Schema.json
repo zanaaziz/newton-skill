@@ -1,0 +1,30 @@
+{
+  "intents": [
+    {
+      "intent": "FindDerivative",
+      "slots": [
+        {
+          "name": "dBase",
+          "type": "Letter"
+        },
+        {
+          "name": "exponent",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "FindLogarithm",
+      "slots": [
+        {
+          "name": "log",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "lBase",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    }
+  ]
+}
