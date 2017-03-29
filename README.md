@@ -4,7 +4,7 @@ An Alexa skill that connects to an API in order to solve various algebraic mathe
 # How Does It Work?
 - 1.) Ask Newton a mathematical expression you'd like the answer to.
 - 2.) Newton will listen and connect to an API which takes in the mathematical expression and responds with its result.
-- 3.) Alexa then calls out the result for you.
+- 3.) Alexa calls out the result to you.
 
 # Where's the API?
 Credits go to Gerald Nash (aunyks) for the API to make this possible on https://newton.now.sh. Amazing work!
