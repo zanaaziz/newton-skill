@@ -28,7 +28,7 @@ exports.handler = (event, context) => {
 
         switch(event.request.intent.name) {
           case "FindDerivative":
-            var endpoint = `https://newton.now.sh/derive/${event.request.intent.slots.dBase.value}^${event.request.intent.slots.exponent.value}` // ENDPOINT GOES HERE
+            var endpoint = `https://newton.now.sh/derive/${event.request.intent.slots.dBase.value}^${event.request.intent.slots.exponent.value}`
             var body = ""
             https.get(endpoint, (response) => {
               response.on('data', (chunk) => { body += chunk })
@@ -46,7 +46,7 @@ exports.handler = (event, context) => {
             break;
 
             case "FindLogarithm":
-            var endpoint = `https://newton.now.sh/log/${event.request.intent.slots.log.value}|${event.request.intent.slots.lBase.value}` // ENDPOINT GOES HERE
+            var endpoint = `https://newton.now.sh/log/${event.request.intent.slots.log.value}|${event.request.intent.slots.lBase.value}`
             var body = ""
             https.get(endpoint, (response) => {
               response.on('data', (chunk) => { body += chunk })
