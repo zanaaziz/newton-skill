@@ -1,5 +1,6 @@
-# newton-alexa-skill-api
-An Alexa skill that connects to an API in order to solve various algebraic mathematical expressions when asked for by the user.
+# What is this?
+Newton is an Alexa skill that connects to an open API in order to solve various algebraic mathematical expressions when asked
+for by the user.
 
 # How Does It Work?
 - 1.) Ask Newton a mathematical expression you'd like the answer to.
