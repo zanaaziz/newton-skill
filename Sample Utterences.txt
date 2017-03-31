@@ -1,0 +1,22 @@
+FindDerivative derive {dBaseOne} to the power of {exponentOne} plus {dBaseTwo} to the power of {exponentTwo}
+FindDerivative what is the derivative of {dBaseOne} to the power of {exponentOne} plus {dBaseTwo} to the power of {exponentTwo}
+FindDerivative what's the derivative of {dBaseOne} to the power of {exponentOne} plus {dBaseTwo} to the power of {exponentTwo}
+FindDerivative what the derivative of {dBaseOne} to the power of {exponentOne} plus {dBaseTwo} to the power of {exponentTwo} is
+FindDerivative find the derivative of {dBaseOne} to the power of {exponentOne} plus {dBaseTwo} to the power of {exponentTwo}
+FindDerivative differentiate {dBaseOne} to the power of {exponentOne} plus {dBaseTwo} to the power of {exponentTwo}
+FindDerivative differentiate {dBaseTwo} to the power of {exponentTwo} plus {dBaseTwo} to the power of {exponentTwo}
+
+FindLogarithm what is the logarithm of {log} to the base of {lBase}
+FindLogarithm what's the logarithm of {log} to the base of {lBase}
+FindLogarithm what is the log of {log} to the base of {lBase}
+FindLogarithm what's the log of {log} to the base of {lBase}
+FindLogarithm what the logarithm of {log} to the base of {lBase} is
+FindLogarithm what the log of {log} to the base of {lBase} is
+FindLogarithm find the log of {log} to the base of {lBase}
+FindLogarithm find the logarithm of {log} to the base of {lBase}
+FindLogarithm log {log} base {lBase}
+FindLogarithm log {log} to base {lBase}
+FindLogarithm log {log} to the base {lBase}
+FindLogarithm log {log} to the base of {lBase}
+FindLogarithm log base {lBase} of {log}
+FindLogarithm log of {log} base {lBase}

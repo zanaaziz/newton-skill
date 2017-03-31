@@ -7,9 +7,6 @@ for by the user.
 - 2.) Newton will listen and connect to an API which takes in the mathematical expression and responds with its result.
 - 3.) Alexa calls out the result to you.
 
-# Where's the API?
-Credits go to Gerald Nash (aunyks) for the API to make this possible on https://newton.now.sh. Amazing work!
-
 # Newton 1.0
 The first working edition of Newton with the capability of solving basic differentiation and logarithmic problems.
 

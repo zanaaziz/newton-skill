@@ -4,11 +4,19 @@
       "intent": "FindDerivative",
       "slots": [
         {
-          "name": "dBase",
+          "name": "dBaseOne",
           "type": "Letter"
         },
         {
-          "name": "exponent",
+          "name": "exponentOne",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "dBaseTwo",
+          "type": "Letter"
+        },
+        {
+          "name": "exponentTwo",
           "type": "AMAZON.NUMBER"
         }
       ]

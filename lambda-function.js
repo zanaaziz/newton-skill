@@ -16,7 +16,7 @@ exports.handler = (event, context) => {
         console.log(`LAUNCH REQUEST`)
         context.succeed(
           generateResponse(
-            buildSpeechletResponse("Mr. Newton says hello, he's ready to solve any calculus problems that you may have.", true),
+            buildSpeechletResponse("Mr. Newton says hello, if you have any calculus problems, tell me and I'll ask him.", true),
             {}
           )
         )
@@ -27,40 +27,51 @@ exports.handler = (event, context) => {
         console.log(`INTENT REQUEST`)
 
         switch(event.request.intent.name) {
-          case "FindDerivative":
-            var endpoint = `https://newton.now.sh/derive/${event.request.intent.slots.dBase.value}^${event.request.intent.slots.exponent.value}`
-            var body = ""
-            https.get(endpoint, (response) => {
-              response.on('data', (chunk) => { body += chunk })
-              response.on('end', () => {
-                var data = JSON.parse(body)
-                var result = JSON.stringify(data.result);
-                context.succeed(
-                  generateResponse(
-                    buildSpeechletResponse(`The answer is ${result}`, true),
-                    {}
-                  )
-                )
-              })
-            })
-            break;
+
+            case "FindDerivative":
+              if(event.request.intent.slots.dBaseTwo.value != null && event.request.intent.slots.exponentTwo.value != null){
+                  var endpoint = `https://newton.now.sh/derive/${event.request.intent.slots.dBaseOne.value}^${event.request.intent.slots.exponentOne.value}+${event.request.intent.slots.dBaseTwo.value}^${event.request.intent.slots.exponentTwo.value}`;
+              }else{
+                  if(event.request.intent.slots.exponentOne.value == null && event.request.intent.slots.exponentTwo.value != null){
+                    event.request.intent.slots.exponentOne.value = event.request.intent.slots.exponentTwo.value;
+                    event.request.intent.slots.exponentTwo.value = null;
+                  }
+                  var endpoint = `https://newton.now.sh/derive/${event.request.intent.slots.dBaseOne.value}^${event.request.intent.slots.exponentOne.value}`;
+              }
+
+              var body = ""
+              https.get(endpoint, (response) => {
+                response.on('data', (chunk) => { body += chunk })
+                response.on('end', () => {
+                  var data = JSON.parse(body)
+                  var expression = JSON.stringify(data.expression);
+                  var result = JSON.stringify(data.result);
+                  context.succeed(
+                    generateResponse(
+                      buildSpeechletResponse(`The answer is ${result}`, true),
+                      {}
+                    )
+                  );
+                });
+              });
+              break;
 
             case "FindLogarithm":
-            var endpoint = `https://newton.now.sh/log/${event.request.intent.slots.log.value}|${event.request.intent.slots.lBase.value}`
-            var body = ""
-            https.get(endpoint, (response) => {
-              response.on('data', (chunk) => { body += chunk })
+            var endpoint2 = `https://newton.now.sh/log/${event.request.intent.slots.log.value}|${event.request.intent.slots.lBase.value}`
+            var body2 = ""
+            https.get(endpoint2, (response) => {
+              response.on('data', (chunk) => { body2 += chunk })
               response.on('end', () => {
-                var data = JSON.parse(body)
+                var data = JSON.parse(body2)
                 var result = JSON.stringify(data.result);
                 context.succeed(
                   generateResponse(
                     buildSpeechletResponse(`The answer is ${result}`, true),
                     {}
                   )
-                )
-              })
-            })
+                );
+              });
+            });
             break;
 
           default:
