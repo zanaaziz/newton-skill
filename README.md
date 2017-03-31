@@ -18,3 +18,10 @@ Differentiation Example:
 Logarithmic Example:
 - User: "What's the log of eight to the base of two?" [log2(8)]
 - Newton: "The answer is three." [3]
+
+# Newton 1.1
+Following upon the first version, 1.1 adds the ability to solve more complex differentiation problems.
+
+Example:
+- User: "Derive two x to the power of nine plus x to the power of seven?" [2x^9+x^7]
+- Newton: "The answer is eighteen x to the power of eight plus seven x to the power of six." [18x^8+7x^6]
